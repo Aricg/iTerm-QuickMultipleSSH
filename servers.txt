@@ -1,3 +1,1 @@
-serverhostname.com
-anotheserver.net
-mycoolserver.org
+We dont use this anymore
