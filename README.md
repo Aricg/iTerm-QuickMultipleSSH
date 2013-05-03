@@ -1,27 +1,22 @@
-# iTerm-QuickMultipleSSH, Mac iTerm multiple servers ssh login
+Modified this script to take arguments passed on the command line. Creates a bookmarking system simmilar to what konsole or clusterssh has. 
+Uses command completion on files populated with hostnames in ~/.quickssh/ to spawn ssh connections in multiple iterm(2) tabs
 
-iTerm-QuickMultipleSSH consists in a applescript that allows to launch a single 
-window of the great [iTerm.app] (http://www.iterm2.com) on your Mac OS X with multiple tabs 
-that automatically login via ssh on a list of servers previously selected.
+#Stuff to make it work. 
 
-## USAGE 
+    mkdir ~/.quickssh/
+    cp iTermQuickMultipleSSH.applescript ~/.quickssh/.quickssh.applescript
+    sudo sh -c 'echo "/usr/bin/osascript ~/.quickssh/.quickssh.applescript "$@"" >  /usr/local/bin/quickssh && sudo chmod +x /usr/local/bin/quickssh'
+    echo "complete -W "$(ls ~/.quickssh/)" quickssh" >> ~/.profile
 
-Right now you just need to run the applescript and make sure you have the file "servers.txt"
-in the same directory has the "iTermQuickMultipleSSH.applescript" with one server hostname for each 
-line.
+#Finally, Phew.
 
-Also having your [public keys authorized] (http://kimmo.suominen.com/docs/ssh/) on each server you want to connect would be really 
-helpful :P Otherwise you will have to introduce your password for each server on each tab... 
+Add files with lists of hostnames into ~/.quickssh
+start a new terminal and type quickssh [tab] [tab]
+you will see all of the files in ~/.quickssh avaliable for completion
+when you run quickssh it will open all of the hostnames as diffrent ssh sessions, assumes ssh root@
 
-If you need more things, check the code and hack it!
 
-## TODO 
-
-- Allow an option to read the servers hostnames directly from a hardcoded variable (not smart, but handy for quick changes).
-- Specify a key file (useful if you have .pem keys to connect for instance to a few EC2 servers).
-- Better USAGE explanation for a more customized usage.
-- Receive parameters in order to make it work with different server files (not sure about this one yet).
-- Not try to login has root only (all said...).
+--- FROM OLD README ---
 
 ## LICENSE
 
