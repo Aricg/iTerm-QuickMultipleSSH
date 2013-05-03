@@ -1,17 +1,7 @@
-## CONFIGURATIONS ##
-
-# operationMode 0  reads the servers hostnames from a local file  (default) 
-# operationMode 1  reads the servers hostnames from a local variable (not implement yet!)
-set operationMode to 0
-
-# local file with one server hostname per line for operationMode = 0 
-set localFileName to "servers.txt"
-
-# list of server hostnames for operationMode = 1 (not in use right now)
-set hostNames to {"serverhostname.com", "anotheserver.net", "mycoolserver.org"}
+on run argv
+set localFileName to (item 1 of argv)
 
 ################
-
 
 set completeFilePath to getCurrentDir() of me & localFileName
 set serversList to readFileContents(completeFilePath) of me
@@ -38,6 +28,8 @@ tell application "iTerm"
 		end repeat
 	end tell
 end tell
+end run
+
 
 (* 
  reads the contents of a file
