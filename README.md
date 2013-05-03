@@ -10,19 +10,20 @@ Uses command completion on files populated with hostnames in ~/.quickssh/ to spa
 
 #Finally, Phew.
 
-Add files with lists of hostnames into ~/.quickssh
-start a new terminal and type quickssh [tab] [tab]
-you will see all of the files in ~/.quickssh avaliable for completion
-when you run quickssh it will open all of the hostnames as diffrent ssh sessions, assumes ssh root@
+1) Add files with lists of hostnames into ~/.quickssh. 
+2) Start a new terminal and type 
+    quickssh [tab] [tab]
+
+you will see all of the files in ~/.quickssh avaliable for completion. When you run quickssh it will open all of the hostnames as diffrent ssh sessions, assumes ssh root@
 
 
---- FROM OLD README ---
 
 ## LICENSE
 
-Just feel free to use it and modify it! 
+Feel free to use it and modify.
 
 ## THANKS 
 
  - [Daniel Aguilar] (http://twitter.com/protozoo), who developed an original script that allowed me to improve it. 
  - [Applescript] (http://en.wikipedia.org/wiki/AppleScript), that old-crappy language widely bad documented in a lot of 90's websites.
+ - [tiagoh] (https://github.com/tiagoh)
