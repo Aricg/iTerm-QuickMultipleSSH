@@ -24,6 +24,6 @@ Feel free to use it and modify.
 
 ## THANKS 
 
- - [Daniel Aguilar] (http://twitter.com/protozoo), who developed an original script that allowed me to improve it. 
- - [Applescript] (http://en.wikipedia.org/wiki/AppleScript), that old-crappy language widely bad documented in a lot of 90's websites.
+ - [Daniel Aguilar] (http://twitter.com/protozoo)
+ - [Applescript] (http://en.wikipedia.org/wiki/AppleScript)
  - [tiagoh] (https://github.com/tiagoh)
