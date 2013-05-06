@@ -20,7 +20,7 @@ you will see all of the files in ~/.quickssh avaliable for completion. When you 
 
 ## LICENSE
 
-Feel free to use it and modify.
+Free to use and modify.
 
 ## THANKS 
 
