@@ -1,3 +1,5 @@
+#Before you start. Stop. Use tmux. 
+
 Modified this script to take arguments passed on the command line. Creates a bookmarking system simmilar to what konsole or clusterssh has. 
 Uses command completion on files populated with hostnames in ~/.quickssh/ to spawn ssh connections in multiple iterm(2) tabs
 
